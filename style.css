@@ -1,0 +1,108 @@
+/*
+@media only screen and (min-width: 600px) {
+}
+	*/
+
+body {
+	padding:3vw;
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	width:;
+	overflow-x: hidden; 
+	background-color: #FBFAF6;
+}
+
+p {
+	position: relative;
+	margin: 0px;
+}
+
+.black-fill {
+	fill:#212121;
+}
+
+.white-fill {
+	fill:#FBFAF6;
+}
+
+header {
+
+}
+
+.animatedcolor {
+	animation:animatedcolor 2s;
+}
+
+@keyframes animatedcolor {
+	0% {fill:#212121;}
+	50% {fill:#EF3E2A;}
+	100% {fill:#212121;}
+}
+
+#subhead {
+	/* for placing the subhead to the right of the CLUB text
+	font-size:1.8vw;
+	top:-11vw;
+	left:58vw;
+	width:32vw;
+	*/
+	font-size:2vw;
+	top:7vw;
+	left:0vw;
+	width:32vw;
+	color:#FBFAF6;
+}
+
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;	
+}
+
+
+#carefulclub {
+	cursor:pointer;
+	/*  hover to animate colors
+	animation: color 8s linear infinite;
+	animation-play-state: paused;
+	cursor: crosshair;
+	*/
+}
+
+#carefulclub:hover {
+	/*  hover to animate colors
+	animation-play-state: running;
+	*/
+}
+
+#content1 {
+	position: absolute;
+	left: -4vw;
+	width: 105vw;   
+	top: 34vw;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
+
+#background-rough-vector {
+	
+}
+
+/*  hover to animate colors
+@keyframes color {
+	0% {fill:#EF3E2A;}
+	7% {fill:#F16937;}
+	15% {fill:#F7A66D;}
+	22% {fill:#FDE0B4;}
+	28% {fill:#71AFA5;}
+	35% {fill:#008794;}
+	42% {fill:#047094;}
+	48% {fill:#254C75;}
+	55% {fill:#047094;}
+	62% {fill:#008794;}
+	68% {fill:#71AFA5;}
+	75% {fill:#FDE0B4;}
+	82% {fill:#F7A66D;}
+	89% {fill:#F16937;}
+	100% {fill:#EF3E2A;}
+}
+*/
