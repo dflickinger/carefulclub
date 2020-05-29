@@ -4,13 +4,12 @@
 	*/
 
 body {
-	padding:3vw;
-	font-family: acumin-pro, sans-serif;
+	font-family: acumin-pro-wide, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	width:;
 	overflow-x: hidden; 
-	background-color: #FBFAF6;
+	background-color: #FFFFFF;
 }
 
 p {
@@ -23,11 +22,33 @@ p {
 }
 
 .white-fill {
-	fill:#FBFAF6;
+	fill:#FFF;
 }
 
 header {
 
+}
+
+.svg-container {
+	padding:3vw 3vw 0vw 3vw;
+	display: inline-block;
+	position: relative;
+	width: 93vw;	
+}
+
+#carefulclub {
+	cursor:pointer;
+	/*  hover to animate colors
+	animation: color 8s linear infinite;
+	animation-play-state: paused;
+	cursor: crosshair;
+	*/
+}
+
+#carefulclub:hover {
+	/*  hover to animate colors
+	animation-play-state: running;
+	*/
 }
 
 .animatedcolor {
@@ -48,33 +69,14 @@ header {
 	width:32vw;
 	*/
 	font-size:2vw;
-	top:7vw;
+	top:0vw;
 	left:0vw;
 	width:32vw;
-	color:#FBFAF6;
-}
-
-.svg-container {
-	display: inline-block;
-	position: relative;
-	width: 100%;	
+	color:#005EFF;
+	padding: 5vw 0vw 5vw 3vw;
 }
 
 
-#carefulclub {
-	cursor:pointer;
-	/*  hover to animate colors
-	animation: color 8s linear infinite;
-	animation-play-state: paused;
-	cursor: crosshair;
-	*/
-}
-
-#carefulclub:hover {
-	/*  hover to animate colors
-	animation-play-state: running;
-	*/
-}
 
 #subhead-box {
 	position: absolute;
@@ -106,3 +108,71 @@ header {
 	100% {fill:#EF3E2A;}
 }
 */
+
+
+
+.project {
+	padding: 6vw 0vw 6vw 12vw;
+	color: #FFF;
+	background-color: #005EFF;
+	fill:#FFF;
+}
+
+.number {
+	font-size: 5vw;
+	position: relative;
+}
+
+.logo {
+	margin: 4vw 0vw 0vw 0vw;
+	width: 30vw;	
+
+}
+
+.responsibilities {
+	font-size: 1.2vw;
+	line-height:2.5vw;
+	padding: 6vw 0vw 0vw 0vw;
+	font-style: italic;
+	position: relative;
+}
+
+.link-out {
+	color: #FFC400;
+	font-size: 2vw;
+	padding:0vw 0vw 0vw 0vw;
+	margin-top: 2vw;
+	position: relative;
+	display: block;
+}
+
+.link-out-svg {
+	position: relative;
+	top: 0.3vw;
+	padding: 0vw 1.5vw 0vw 0vw;
+}
+
+.project-notes {
+	font-size: 1.2vw;
+	line-height:2vw;
+	position: relative;	
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	padding: 1.5vw 0vw 0vw 0vw;
+	width: 35vw;
+}
+
+.notes-header {
+	display: block;
+	font-size: 1.2vw;
+	line-height:2vw;
+	position: relative;	
+	font-family: acumin-pro, sans-serif;
+	font-weight: 700;
+	padding: 3.5vw 0vw 0vw 0vw;
+	width: 35vw;
+}
+
+a {
+	color: #FFC400;
+}
