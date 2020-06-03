@@ -7,23 +7,17 @@ body {
 	font-family: acumin-pro-wide, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	width:;
 	overflow-x: hidden; 
 	background-color: #FFFFFF;
+	margin:0px;
 }
 
 p {
 	position: relative;
 	margin: 0px;
+	display: block;
 }
 
-.black-fill {
-	fill:#212121;
-}
-
-.white-fill {
-	fill:#FFF;
-}
 
 header {
 
@@ -37,7 +31,6 @@ header {
 }
 
 #carefulclub {
-	cursor:pointer;
 	/*  hover to animate colors
 	animation: color 8s linear infinite;
 	animation-play-state: paused;
@@ -68,6 +61,7 @@ header {
 	left:58vw;
 	width:32vw;
 	*/
+	display: inline-block;
 	font-size:2vw;
 	top:0vw;
 	left:0vw;
@@ -76,13 +70,42 @@ header {
 	padding: 5vw 0vw 5vw 3vw;
 }
 
+.hexes {
+	cursor:pointer;
+}
 
+.hexes:hover {
+	opacity: 55%;
+}
 
-#subhead-box {
+.hex-icons {
+	pointer-events: none
+}
+
+.hex-text {
+	display: inline-block;
+    color:#000;
+}
+
+#ethos-container {
+	padding: 5vw 0vw 2vw 3vw;
+	display: inline-block;
+	right: 6vw;
 	position: absolute;
-	left: -4vw;
-	width: 105vw;   
-	top: 34vw;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+	font-size: 1.9vw;
+	width: 33vw
+}
+
+.recycle-hex {
+	color:#FF3355;
+}
+
+.eye-hex {
+	color:#00C288;
+}
+
+.handi-hex {
+	color:#FFC400;
 }
 
 #background-rough-vector {
@@ -143,7 +166,7 @@ header {
 	padding:0vw 0vw 0vw 0vw;
 	margin-top: 2vw;
 	position: relative;
-	display: block;
+	display: inline-block;
 }
 
 .link-out-svg {
@@ -175,4 +198,15 @@ header {
 
 a {
 	color: #FFC400;
+}
+
+a:hover {
+	color: #FFD880;
+	filter: brightness(1000%);
+}
+
+
+
+.hidden {
+	display: none;
 }
