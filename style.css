@@ -55,6 +55,24 @@ p {
 
 .inlinelink {
 	color: var(--yellow);
+	position: relative;
+}
+
+.image-preview {
+	position: fixed;
+	pointer-events: none;
+	z-index: 1000;
+	max-width: 1200px;
+	max-height: 900px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+	border: 2px solid var(--white);
+	border-radius: 4px;
+}
+
+.image-preview.visible {
+	opacity: 1;
 }
 
 .resumelink {

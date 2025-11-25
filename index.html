@@ -213,9 +213,11 @@
 		<p class="responsibilities reveal">
 			Webpage Refresh<br>
 		</p>
+	<!--- they killed my website.	
 		<a href="https://transportation.umd.edu/" class="link-out reveal" target="_blank">
 			<img src="img/linkoutsvg.svg" class="svg-icon">View Website
 		</a>
+	-->
 		<br>
 		<a href="uom.html" class="link-out reveal" target="_blank">
 			<img src="img/linkoutsvg.svg" class="svg-icon">View Visual Rundown
@@ -228,7 +230,7 @@
 			Clarity and simplicity was our goal with this project.
 		</p>
 		<p class="project-notes reveal">
-			The client would have been fine with very minor updates to their <a class="inlinelink" href="https://puu.sh/FRD41/b9c3ca1886.png">out of date site</a> but I really tried to jump their designs into the modern era.
+			Modern, focused designs for a college service.
 		</p>
 		<!--
 		<p class="project-notes">
@@ -410,6 +412,35 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<script>
+  // Create image preview element
+  const preview = document.createElement('img');
+  preview.className = 'image-preview';
+  document.body.appendChild(preview);
+
+  // Get all inlinelinks that point to images
+  const imageLinks = document.querySelectorAll('.inlinelink[href$=".png"], .inlinelink[href$=".jpg"], .inlinelink[href$=".jpeg"], .inlinelink[href$=".gif"]');
+
+  imageLinks.forEach(link => {
+    link.addEventListener('mouseenter', (e) => {
+      preview.src = link.href;
+      preview.classList.add('visible');
+    });
+
+    link.addEventListener('mousemove', (e) => {
+      // Position the preview near the cursor
+      const x = e.clientX + 20;
+      const y = e.clientY + 20;
+      preview.style.left = x + 'px';
+      preview.style.top = y + 'px';
+    });
+
+    link.addEventListener('mouseleave', () => {
+      preview.classList.remove('visible');
+    });
+  });
 </script>
 
 
