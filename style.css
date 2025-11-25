@@ -7,9 +7,6 @@
 	--dark-gray: #212121;
 	--red: #FF3355;
 	--green: #00C288;
-	--handi-yellow: #FFC400;
-	--project-bg-blue: #005EFF;
-	--project-text-white: #FFF;
 }
 
 body {
@@ -26,6 +23,23 @@ p {
 	margin: 0px;
 	display: block;
 }
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 
+    opacity 0.6s ease-out 0.3s,
+    transform 0.6s ease-out 0.3s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
 .down {
 	position: relative;
@@ -73,10 +87,12 @@ p {
 	color: var(--yellow-light);
 }
 
-.link-out-svg {
+.svg-icon {
 	position: relative;
 	top: 0.3vw;
 	padding: 0vw 1.5vw 0vw 0vw;
+	height: 32px;
+	width: 32px;
 }
 
 .svg-container {
@@ -155,6 +171,10 @@ p {
 	width: 33vw
 }
 
+.welcome {
+	color: var(--blue);
+}
+
 .recycle-hex {
 	color: var(--red);
 }
@@ -164,14 +184,14 @@ p {
 }
 
 .handi-hex {
-	color: var(--handi-yellow);
+	color: var(--yellow);
 }
 
 .project {
 	padding: 6vw 0vw 6vw 12vw;
-	color: var(--project-text-white);
-	background-color: var(--project-bg-blue);
-	fill: var(--project-text-white);
+	color: var(--white);
+	background-color: var(--blue);
+	fill: var(--white);
 	background-image: url("img/lil-rectangle.svg");
 	background-repeat: no-repeat;
 	background-position: 0vw 10.5vw;
@@ -312,7 +332,7 @@ p {
 	font-size: 5vw;
 }
 
-.link-out-svg {
+.svg-icon {
 	width: 5vw;
 	padding-top: 4vw;
 	padding-right: 3vw;
