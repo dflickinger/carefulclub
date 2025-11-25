@@ -1,15 +1,24 @@
-/*
-@media only screen and (min-width: 600px) {
+:root {
+	--white: #FFFFFF;
+	--yellow: #FFC400;
+	--yellow-light: #FFD880;
+	--blue: #005EFF;
+	--black: #000;
+	--dark-gray: #212121;
+	--red: #FF3355;
+	--green: #00C288;
+	--handi-yellow: #FFC400;
+	--project-bg-blue: #005EFF;
+	--project-text-white: #FFF;
 }
-	*/
 
 body {
 	font-family: acumin-pro-wide, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	overflow-x: hidden; 
-	background-color: #FFFFFF;
 	margin:0px;
+	background-color: var(--white);
 }
 
 p {
@@ -18,9 +27,58 @@ p {
 	display: block;
 }
 
+header {}
 
-header {
+.down {
+	position: relative;
+	top: 2vw;
+	padding: 0vw 0vw 0vw 3vw;
+	width: 3vw;
+	height: 3vw;
+}
 
+.inlinelink:visited {
+	color: var(--yellow);
+}
+
+.inlinelink {
+	color: var(--yellow);
+}
+
+.resumelink {
+	color: var(--blue);
+	font-size: 2vw;
+	padding:0vw 2vw 0vw 0vw;
+	margin-top: 2vw;
+	position: relative;
+	display: inline-block;
+}
+
+.resumelink:visited {
+	color: var(--blue);
+}
+
+.resumelink:hover {
+	color: var(--blue);
+}
+
+.link-out {
+	color: var(--yellow);
+	font-size: 2vw;
+	padding:0vw 5vw 0vw 0vw;
+	margin-top: 2vw;
+	position: relative;
+	display: inline-block;
+}
+
+.link-out:hover {
+	color: var(--yellow-light);
+}
+
+.link-out-svg {
+	position: relative;
+	top: 0.3vw;
+	padding: 0vw 1.5vw 0vw 0vw;
 }
 
 .svg-container {
@@ -31,17 +89,7 @@ header {
 }
 
 #carefulclub {
-	/*  hover to animate colors
-	animation: color 8s linear infinite;
-	animation-play-state: paused;
-	cursor: crosshair;
-	*/
-}
-
-#carefulclub:hover {
-	/*  hover to animate colors
-	animation-play-state: running;
-	*/
+	cursor:pointer;
 }
 
 .animatedcolor {
@@ -49,25 +97,38 @@ header {
 }
 
 @keyframes animatedcolor {
-	0% {fill:#212121;}
-	50% {fill:#EF3E2A;}
-	100% {fill:#212121;}
+	0% {fill: var(--dark-gray);}
+	50% {fill:#EF3E2A;} /* Single-use color, left as-is */
+	100% {fill: var(--dark-gray);}
 }
 
 #subhead {
-	/* for placing the subhead to the right of the CLUB text
-	font-size:1.8vw;
-	top:-11vw;
-	left:58vw;
-	width:32vw;
-	*/
 	display: inline-block;
 	font-size:2vw;
 	top:0vw;
 	left:0vw;
 	width:32vw;
-	color:#005EFF;
-	padding: 5vw 0vw 5vw 3vw;
+	color: var(--blue);
+	padding: 5vw 0vw 0vw 3vw;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#links {
+	padding: 0vw 0vw 1vw 3vw;
+}
+
+.emoji {
+	display: inline;
+}
+
+.highlighted {
+	line-height: 3vw;
+	padding-top: .3vw;
 }
 
 .hexes {
@@ -78,13 +139,13 @@ header {
 	opacity: 55%;
 }
 
-.hex-icons {
-	pointer-events: none
+.ex-icons {
+	pointer-events: none;
 }
 
 .hex-text {
 	display: inline-block;
-    color:#000;
+    color: var(--black);
 }
 
 #ethos-container {
@@ -97,48 +158,26 @@ header {
 }
 
 .recycle-hex {
-	color:#FF3355;
+	color: var(--red);
 }
 
 .eye-hex {
-	color:#00C288;
+	color: var(--green);
 }
 
 .handi-hex {
-	color:#FFC400;
+	color: var(--handi-yellow);
 }
-
-#background-rough-vector {
-	
-}
-
-/*  hover to animate colors
-@keyframes color {
-	0% {fill:#EF3E2A;}
-	7% {fill:#F16937;}
-	15% {fill:#F7A66D;}
-	22% {fill:#FDE0B4;}
-	28% {fill:#71AFA5;}
-	35% {fill:#008794;}
-	42% {fill:#047094;}
-	48% {fill:#254C75;}
-	55% {fill:#047094;}
-	62% {fill:#008794;}
-	68% {fill:#71AFA5;}
-	75% {fill:#FDE0B4;}
-	82% {fill:#F7A66D;}
-	89% {fill:#F16937;}
-	100% {fill:#EF3E2A;}
-}
-*/
-
-
 
 .project {
 	padding: 6vw 0vw 6vw 12vw;
-	color: #FFF;
-	background-color: #005EFF;
-	fill:#FFF;
+	color: var(--project-text-white);
+	background-color: var(--project-bg-blue);
+	fill: var(--project-text-white);
+	background-image: url("img/lil-rectangle.svg");
+	background-repeat: no-repeat;
+	background-position: 0vw 10.5vw;
+	background-size: 10vw;
 }
 
 .number {
@@ -149,7 +188,6 @@ header {
 .logo {
 	margin: 4vw 0vw 0vw 0vw;
 	width: 30vw;	
-
 }
 
 .responsibilities {
@@ -158,21 +196,6 @@ header {
 	padding: 6vw 0vw 0vw 0vw;
 	font-style: italic;
 	position: relative;
-}
-
-.link-out {
-	color: #FFC400;
-	font-size: 2vw;
-	padding:0vw 0vw 0vw 0vw;
-	margin-top: 2vw;
-	position: relative;
-	display: inline-block;
-}
-
-.link-out-svg {
-	position: relative;
-	top: 0.3vw;
-	padding: 0vw 1.5vw 0vw 0vw;
 }
 
 .project-notes {
@@ -189,24 +212,166 @@ header {
 	display: block;
 	font-size: 1.2vw;
 	line-height:2vw;
+	padding-top: 2vw;
 	position: relative;	
 	font-family: acumin-pro, sans-serif;
 	font-weight: 700;
-	padding: 3.5vw 0vw 0vw 0vw;
 	width: 35vw;
 }
 
-a {
-	color: #FFC400;
-}
-
-a:hover {
-	color: #FFD880;
-	filter: brightness(1000%);
-}
-
-
-
 .hidden {
 	display: none;
+}
+
+#resume {
+	padding: 6vw 0vw 6vw 12vw;
+	color: var(--dark-gray);
+	background-color: var(--white);
+	font-size: 1.5vw;
+	width: 35vw;
+}
+
+.resume-h2 {
+	padding-bottom: 2vw;
+	font-size: 2.5vw;
+}
+
+.resume-h1 {
+	font-size:2vw;
+}
+
+.resume-job {
+	font-size:1.8vw;
+	padding-bottom: 2vw;
+}
+
+.resume-text {
+	font-size:1.3vw;
+	padding-bottom: 2vw;
+	position: relative;	
+	line-height:2vw;
+}
+
+.resume-h3 {
+	font-size:1vw;
+	font-style:italic; 
+	padding-bottom: .5vw;
+}
+
+/* ------------------------------------- */
+/* RESPONSIVE */
+/* ------------------------------------- */
+
+@media only screen and (max-width: 1040px) {
+
+.down {
+	width: 0vw;
+	height: 0vw;
+	top: 5vw;
+}
+
+#links {
+	padding: 0vw 0vw 1vw 3vw;
+}
+
+#subhead {
+	font-size:3.4vw;
+	width:50vw;
+}
+
+#ethos-container {
+	padding: 5vw 0vw 1vw 3vw;
+	display: inline-block;
+	right: 9vw;
+	position: absolute;
+	font-size: 3.1vw;
+	width:36vw;
+}
+
+.logo {
+	margin: 4vw 0vw 0vw 0vw;
+	width: 60vw;	
+}
+
+.project {
+	background-position: 0vw 15.5vw;
+}
+
+.number {
+	font-size:10vw;
+}
+
+.responsibilities {
+	font-size: 5.2vw;
+	line-height:6.5vw;
+}
+
+.link-out {
+	font-size: 5vw;
+}
+
+.resumelink {
+	font-size: 5vw;
+}
+
+.link-out-svg {
+	width: 5vw;
+	padding-top: 4vw;
+	padding-right: 3vw;
+}
+
+.notes-header {
+	font-size: 5vw;	
+	width: 45vw;
+	padding-bottom: 5vw;
+	padding-top:8vw;
+}
+
+.project-notes {
+	font-size:5vw;
+	width: 75vw;
+	line-height: 6vw;
+}
+
+#resume {
+	padding: 6vw 0vw 6vw 12vw;
+	color: var(--dark-gray);
+	background-color: var(--white);
+	font-size: 1.5vw;
+	width: 75vw;
+}
+
+.resume-h2 {
+	padding-bottom: 6vw;
+	font-size: 8vw;
+}
+
+.resume-h1 {
+	font-size:9vw;
+	padding-bottom: 3vw;
+}
+
+.resume-job {
+	font-size:6vw;
+	padding-bottom: 6vw;
+}
+
+.resume-text {
+	font-size:6vw;
+	padding-bottom: 6vw;
+	position: relative;	
+	line-height:8vw;
+}
+
+.resume-h3 {
+	font-size:5vw;
+	font-style:italic; 
+	padding-bottom: 3vw;
+	padding-top: 3vw;
+}
+
+#pdf {
+	font-size:6vw; 
+}
+
 }

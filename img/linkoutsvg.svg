@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>linkoutsvg</title>
+    <g id="linkoutsvg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M28.4443,28.4443 L3.5553,28.4443 L3.5553,3.5553 L3.5553,0.0003 C1.5823,0.0003 0.0003,1.6003 0.0003,3.5553 L0.0003,28.4443 C0.0003,30.4083 1.5913,32.0003 3.5553,32.0003 L28.4443,32.0003 C30.4083,32.0003 32.0003,30.4083 32.0003,28.4443 L28.4443,28.4443 Z M19.5553,0.0003 L19.5553,3.5553 L25.9373,3.5553 L8.4623,21.0313 L10.9683,23.5373 L28.4443,6.0623 L28.4443,12.4443 L32.0003,12.4443 L32.0003,0.0003 L19.5553,0.0003 Z" id="linkout" fill="#FFC400"></path>
+    </g>
+</svg>

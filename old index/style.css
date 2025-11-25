@@ -1,0 +1,363 @@
+
+body {
+	font-family: acumin-pro-wide, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	overflow-x: hidden; 
+	background-color: #FFFFFF;
+	margin:0px;
+}
+
+p {
+	position: relative;
+	margin: 0px;
+	display: block;
+}
+
+header {
+
+}
+
+.svg-container {
+	padding:3vw 3vw 0vw 3vw;
+	display: inline-block;
+	position: relative;
+	width: 93vw;	
+}
+
+#carefulclub {
+	/*  hover to animate colors
+	animation: color 8s linear infinite;
+	animation-play-state: paused;
+	cursor: crosshair;
+	*/
+	cursor:pointer;
+}
+
+#carefulclub:hover {
+	/*  hover to animate colors
+	animation-play-state: running;
+	*/
+}
+
+.animatedcolor {
+	animation:animatedcolor 2s;
+}
+
+@keyframes animatedcolor {
+	0% {fill:#212121;}
+	50% {fill:#EF3E2A;}
+	100% {fill:#212121;}
+}
+
+#subhead {
+	/* for placing the subhead to the right of the CLUB text
+	font-size:1.8vw;
+	top:-11vw;
+	left:58vw;
+	width:32vw;
+	*/
+	display: inline-block;
+	font-size:2vw;
+	top:0vw;
+	left:0vw;
+	width:32vw;
+	color:#005EFF;
+	padding: 5vw 0vw 5vw 3vw;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.emoji {
+	display: inline;
+}
+
+.highlighted {
+	background-color:rgb(0, 94, 255);
+	line-height: 3vw;
+}
+
+.hexes {
+	cursor:pointer;
+}
+
+.hexes:hover {
+	opacity: 55%;
+}
+
+.ex-icons {
+	pointer-events: none;
+}
+
+.hex-text {
+	display: inline-block;
+    color:#000;
+}
+
+#ethos-container {
+	padding: 5vw 0vw 2vw 3vw;
+	display: inline-block;
+	right: 6vw;
+	position: absolute;
+	font-size: 1.9vw;
+	width: 33vw
+}
+
+.recycle-hex {
+	color:#FF3355;
+}
+
+.eye-hex {
+	color:#00C288;
+}
+
+.handi-hex {
+	color:#FFC400;
+}
+
+#background-rough-vector {
+	
+}
+
+/*  hover to animate colors
+@keyframes color {
+	0% {fill:#EF3E2A;}
+	7% {fill:#F16937;}
+	15% {fill:#F7A66D;}
+	22% {fill:#FDE0B4;}
+	28% {fill:#71AFA5;}
+	35% {fill:#008794;}
+	42% {fill:#047094;}
+	48% {fill:#254C75;}
+	55% {fill:#047094;}
+	62% {fill:#008794;}
+	68% {fill:#71AFA5;}
+	75% {fill:#FDE0B4;}
+	82% {fill:#F7A66D;}
+	89% {fill:#F16937;}
+	100% {fill:#EF3E2A;}
+}
+*/
+
+.project {
+	padding: 6vw 0vw 6vw 12vw;
+	color: #FFF;
+	background-color: #005EFF;
+	fill:#FFF;
+	background-image: url("img/lil-rectangle.svg");
+	background-repeat: no-repeat;
+	background-position: 0vw 10.5vw;
+	background-size: 10vw;
+}
+
+.number {
+	font-size: 5vw;
+	position: relative;
+}
+
+.logo {
+	margin: 4vw 0vw 0vw 0vw;
+	width: 30vw;	
+}
+
+.responsibilities {
+	font-size: 1.2vw;
+	line-height:2.5vw;
+	padding: 6vw 0vw 0vw 0vw;
+	font-style: italic;
+	position: relative;
+}
+
+.link-out {
+	color: #FFC400;
+	font-size: 2vw;
+	padding:0vw 0vw 0vw 0vw;
+	margin-top: 2vw;
+	position: relative;
+	display: inline-block;
+}
+
+.link-out:hover {
+	color: #FFD880;
+}
+
+.resumelink:hover {
+	color: #000;
+}
+
+.link-out-svg {
+	position: relative;
+	top: 0.3vw;
+	padding: 0vw 1.5vw 0vw 0vw;
+}
+
+.project-notes {
+	font-size: 1.2vw;
+	line-height:2vw;
+	position: relative;	
+	font-family: acumin-pro, sans-serif;
+	font-weight: 400;
+	padding: 1.5vw 0vw 0vw 0vw;
+	width: 35vw;
+}
+
+.notes-header {
+	display: block;
+	font-size: 1.2vw;
+	line-height:2vw;
+	position: relative;	
+	font-family: acumin-pro, sans-serif;
+	font-weight: 700;
+		
+	width: 35vw;
+}
+
+.hidden {
+	display: none;
+}
+
+#resume {
+	padding: 6vw 0vw 6vw 12vw;
+	color: #212121;
+	background-color: #FFF;
+	font-size: 1.5vw;
+	width: 35vw;
+}
+
+.resume-h2 {
+	padding-bottom: 2vw;
+	font-size: 2.5vw;
+}
+
+.resume-h1 {
+	font-size:2vw;
+}
+
+.resume-job {
+	font-size:1.8vw;
+	padding-bottom: 2vw;
+}
+
+.resume-text {
+	font-size:1.3vw;
+	padding-bottom: 2vw;
+	position: relative;	
+	line-height:2vw;
+}
+
+.resume-h3 {
+	font-size:1vw;
+	font-style:italic; 
+	padding-bottom: .5vw;
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+
+
+#subhead {
+	font-size:6vw;
+	width:50vw;
+	padding-bottom: 10vw;
+}
+
+#ethos-container {
+	padding: 5vw 0vw 1vw 3vw;
+	display: inline-block;
+	right: 9vw;
+	position: absolute;
+	font-size: 5.5vw;
+	width:36vw;
+}
+
+
+.logo {
+	margin: 4vw 0vw 0vw 0vw;
+	width: 60vw;	
+}
+
+.project {
+	background-position: 0vw 15.5vw;
+}
+
+.number {
+	font-size:10vw;
+}
+
+.responsibilities {
+	font-size: 5.2vw;
+	line-height:6.5vw;
+}
+
+.link-out {
+	font-size: 5vw;
+}
+
+.link-out-svg {
+	width: 5vw;
+	padding-top: 4vw;
+	padding-right: 3vw;
+}
+
+.notes-header {
+	font-size: 5vw;	
+	width: 45vw;
+	padding-bottom: 5vw;
+	padding-top:8vw;
+}
+
+.project-notes {
+	font-size:5vw;
+	width: 75vw;
+	line-height: 6vw;
+}
+
+
+#resume {
+	padding: 6vw 0vw 6vw 12vw;
+	color: #212121;
+	background-color: #FFF;
+	font-size: 1.5vw;
+	width: 75vw;
+}
+
+.resume-h2 {
+	padding-bottom: 6vw;
+	font-size: 8vw;
+}
+
+.resume-h1 {
+	font-size:9vw;
+	padding-bottom: 3vw;
+}
+
+.resume-job {
+	font-size:6vw;
+	padding-bottom: 6vw;
+}
+
+.resume-text {
+	font-size:6vw;
+	padding-bottom: 6vw;
+	position: relative;	
+	line-height:8vw;
+}
+
+.resume-h3 {
+	font-size:5vw;
+	font-style:italic; 
+	padding-bottom: 3vw;
+	padding-top: 3vw;
+}
+
+#pdf {
+	font-size:6vw; 
+}
+
+
+}
